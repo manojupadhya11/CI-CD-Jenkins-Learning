@@ -1,0 +1,63 @@
+    1  yum install docker -y
+    2  systemctl enable dpocker
+    3  systemctl enable docker
+    4  systemctl start docker
+    5  systemctl status docker
+    6  clear
+    7  docker ps
+    8  docker images
+    9  docker pull jenkins/jenkins:lts-jdk17
+   10  docker images
+   11  docker run --name jenkinsmaster jenkins/jenkins:lts-jdk17
+   12  exit
+   13  docker ps
+   14  clear
+   15  docker run --name jenkinsmaster -p 8080:8080 -p 50000:50000 -d jenkins/jenkins:lts-jdk17
+   16  docker ps
+   17  cat /var/jenkins_home/secrets/initialAdminPassword
+   18  docker attach 05af
+   19  docker attach jenkinsmaster
+   20  docker ps
+   21  docker start jenkinsmaster
+   22  docker ps
+   23  docker attach jenkinsmaster
+   24  docker ps
+   25  docker ps -a
+   26  docker remove jenkins master
+   27  docker remove jenkinsmaster
+   28  docker run --name jenkinsmaster -p 8080:8080 -p 50000:50000 -d jenkins/jenkins:lts-jdk17
+   29  docker attach jenkinsmaster
+   30  docker ps
+   31  docker stop 26e9b
+   32  docker ps
+   33  docker remove 26e9b
+   34  clear
+   35  hostname -I
+   36  docker ps
+   37  docker ps
+   38  docker ps -a
+   39  docker remove ss529
+   40  docker remove dd529
+   41  docker ps
+   42  clear
+   43  docker ps
+   44  docker exec jenkinsmaster date
+   45  docker exec jenkinsmaster cat /var/jenkins_home/secrets/initialAdminPassword
+   46  docker ps
+   47  hostname -I
+   48  docker ps
+   49  docker stop dd529
+   50  docker remove dd529
+   51  docker ps 
+   52  docker ps -a
+   53  docker run --name jenkinsmaster -p 8080:8080 -p 50000:50000 -d  jenkins/jenkins:lts-jdk17
+   54  docker ps
+   55  docker exec jenkinsmaster cat /var/jenkins_home/secrets/initialAdminPassword
+   56  history
+   57  docker exec jenkinsmaster yum install httpd -y
+   58  docker exec jenkinsmaster bash
+   59  docker ps
+   60  docker exec -it jenkinsmaster bash
+   61  docker images
+   62  docker ps
+   63  history
