@@ -1,0 +1,43 @@
+
+   [root@ip-172-31-43-15 Test]# history
+    1  yum install docker -y
+    2  docker images
+    3  systemctl start docker
+    4  docker images
+    5  docker pull jenkins/jenkins
+    6  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+    7  docker ps 
+    8  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+    9  clear
+   10  yum install git -y
+   11  docker images
+   12  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm yum install jdk-17.0.10_linux-x64_bin.rpm -y
+   13  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm
+   14  yum install jdk-17.0.10_linux-x64_bin.rpm -y
+   15  curl -sO http://43.205.199.254:8080/jnlpJars/agent.jar
+   16  ls
+   17  mkdire JenkinsSlave
+   18  mkdir JenkinsSlave
+   19  ls
+   20  java -jar agent.jar -url http://43.205.199.254:8080/ -secret fe4f4b7e772fd78596929caf8f217dadbea673c7b43faef327fb4d90f0f8a960 -name "ec2-slave" -workDir "
+   21  pwd
+   22  cd JenkinsSlave/
+   23  ls
+   24  pwd
+   25  cd ..
+   26  java -jar agent.jar -url http://43.205.199.254:8080/ -secret fe4f4b7e772fd78596929caf8f217dadbea673c7b43faef327fb4d90f0f8a960 -name "ec2-slave" -workDir "/home/ec2-	user/JenkinsSlave" &
+   27  docker ps
+   28  ls
+   29  cd JenkinsSlave/
+   30  ls
+   31  cd workspace/
+   32  ls
+   33  cd Test/
+   34  ls
+   35  git log
+   36  git log
+   37  git log
+   38  git log
+   39  git log
+   40  history
+   41  history

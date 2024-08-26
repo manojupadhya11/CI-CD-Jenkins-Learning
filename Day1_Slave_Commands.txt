@@ -1,0 +1,126 @@
+     1  clear
+    2  mkdire jenkinsSlave
+    3  mkdir jenkinsSlave
+    4  ls
+    5  pwd
+    6  cd jenk
+    7  cd jenkinsSlave/
+    8  ls
+    9  pwd
+   10  curl -sO http://13.201.86.21:8080/jnlpJars/agent.jar
+   11  ls
+   12  ls
+   13  cd ..
+   14  ls
+   15  cd /
+   16  ls
+   17  curl -sO http://13.201.86.21:8080/jnlpJars/agent.jar
+   18  ls
+   19  curl -sO http://13.201.86.21:8080/jnlpJars/agent.jar
+   20  ls
+   21  ls
+   22  cd home
+   23  ls
+   24  cd ec2`
+   25  cd ec2-
+   26  cd ec2-user/
+   27  ls
+   28  ls -l
+   29  ls -a
+   30  cd /
+   31  ls -a
+   32  clear
+   33  wget -sO http://13.201.86.21:8080/jnlpJars/agent.jar
+   34  wget http://65.2.9.103:8080/jnlpJars/agent.jar
+   35  curl -sO http://65.2.9.103:8080/jnlpJars/agent.jar
+   36  ls
+   37  java -jar agent.jar -url http://65.2.9.103:8080/ -secret 25b9ccbef959fc2a3aa5eab2de8d564290f1c22f005e29a30a9e8b0d2556afb6 -name "ec2-slave" -workDir "/home/ec2-	user/jenkinsSlave"
+   38  yum install java
+   39  clear
+   40  java --version
+   41  yum install jdk-17
+   42  wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.rpm
+   43  ls
+   44  yum install jdk-22_linux0x64_bin.rpm
+   45  wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.rpm
+   46  ls
+   47  rm -r jdk-22
+   48  rmdir -r  jdk-22_linux0x64_bin.rpm
+   49  rmdir -rf  jdk-22_linux0x64_bin.rpm
+   50  rmdir jdk-22_linux0x64_bin.rpm
+   51  wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+   52  ls
+   53  clear
+   54  ls
+   55  yum install jdk-17_linux-x64_bin.rpm
+   56  ps -aux
+   57  kill 4705
+   58  yum install jdk-17_linux-x64_bin.rpm
+   59  ps -aux |grep 4795
+   60  ps -aux |grep 4705
+   61  pkill 4705
+   62  ps -aux |grep 4705
+   63  kill 9 4705
+   64  ps -aux |grep 4705
+   65  ps -aux |grep 4705
+   66  kill -l
+   67  ps
+   68  pkill 4705
+   69  ps
+   70  kill 4705
+   71  ls
+   72  ps
+   73  cd proc/
+   74  ls
+   75  cd 4705
+   76  ls
+   77  cd /
+   78  kill -15 4705
+   79  ls
+   80  ps
+   81  ps -aux
+   82  ls
+   83  cd home/
+   84  ls
+   85  cd ec2-user/
+   86  ls
+   87  cd Je
+   88  cd jenkinsSlave/
+   89  ls
+   90  history
+
+
+    1  clear
+    2  sudo su
+    3  ls
+    4  ps
+    5  sudo su
+    6  clear
+    7  ps -aux |grep java
+    8  ls
+    9  cd jenkinsSlave/
+   10  ks
+   11  ls
+   12  cd remoting/
+   13  ls
+   14  cd logs/
+   15  ls
+   16  cd ..
+   17  cd..
+   18   cd ..
+   19  ls
+   20  ls 
+   21  cd workspace/
+   22  ls
+   23  cd Job1/
+   24  ks
+   25  ls
+   26  cd ..
+   27  ls /var/www/html/
+   28  cd /var/www/html/
+   29  cd /
+   30  yum install httpd -y &
+   31  sudo yum install httpd -y &
+   32  ls
+   33  sudo su
+   34  history
