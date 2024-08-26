@@ -1,0 +1,101 @@
+    1  yum install docker -y
+    2  systemctl start docker
+    3  systemctl status docker
+    4  clear
+    5  docker run -dit --name myos1 centos:7
+    6  docker ps
+    7  ls
+    8  cd /
+    9  ls
+   10  touch manu.txt
+   11  nano manu.txt 
+   12  ls
+   13  docker attach myos1
+   14  docker ps
+   15  docker stop myos1
+   16  docker ps
+   17  docker ps -a
+   18  docker start myos1
+   19  docket attach myos1
+   20  docker attach myos1
+   21  ls
+   22  docker cp manu.txt myos1:/
+   23  docker attach myos1
+   24  docker cp myos1:/a.txt .
+   25  ls
+   26  ls
+   27  history
+   28  ls
+   29  cd /
+   30  ls
+   31  cd manuDockerVolume/
+   32  history
+   33  docker volume ls
+   34  docker ps
+   35  docker attach os1
+   36  docker volumes
+   37  docker volume
+   38  docker volume ls
+   39  ls
+   40  cd ..
+   41  docker volumes ls
+   42  docker volume ls
+   43  docker rm -rf os1
+   44  docker rm -f os1
+   45  docker rm -f os2
+   46  docker ps 
+   47  history
+   48  docker run -dit --name os1 -v /manuDockerVolume/:/app/ centos:7
+   49  docker ps 
+   50  docker attach os1
+   51  docker run -dit --name os2 -v /manuDockerVolume/:/app/ centos:7
+   52  docker ps
+   53  docker attach os2
+   54  docker ps 
+   55  history
+   56  docker run -dit --name mywebos -p 80:80 -v /manuDockerVolume/:/usr/share/nginx/html/ nginx
+   57  docker ps
+   58  cd manuDockerVolume/
+   59  vi index.html
+   60  ls
+   61  vi index.html 
+   62  history  
+   63  docker ps
+   64  ls
+   65  vi index.html 
+   66  docker run -dit --name mywebos -p 81:80 -v /manuDockerVolume/:/usr/share/nginx/html/ nginx
+   67  docker run -dit --name mywebos1 -p 81:80 -v /manuDockerVolume/:/usr/share/nginx/html/ nginx
+   68  docker ps
+   69  ls
+   70  vi index.html 
+   71  history
+   72  clear
+   73  docker volume --help
+   74  docker volume create manuvolume
+   75  docker volume ls
+   76  docker run -dit --name os3 -v manuvolume:/app/ centos
+   77  docker ps
+   78  docker volume --help
+   79  docker inspect manuvolume
+   80  cd /var/lib/docker/volumes/manuvolume/
+   81  ls
+   82  touch abcd.txt
+   83  docker attach os3
+   84  docker inpspect manuvolume
+   85  docker inspect manuvolume
+   86  docker ps
+   87  docker attach os3
+   88  ls
+   89  clear
+   90  socker rm -d os3
+   91  docker rm -d os3
+   92  docker rm -f os3
+   93  cd /
+   94  history
+   95  docker run -dit --name OS4 -v manuvolume:/app/ centos:7
+   96  docker attach OS4
+   97  cd /var/lib/docker/volumes/manuvolume/_data/
+   98  ls
+   99  touch abcd.txt
+   100 docker attach OS4
+   101 
