@@ -1,0 +1,17 @@
+166  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+  167  docker ps
+  168  docker stop OS4
+  169  docker stop mywebos
+  170  docker stop mywebos1
+  171  docker stop os1
+  172  docker stop os2
+  173  docker ps
+  174  docker ps
+  175  docker sto[ 0291
+  176  docker stop 0291
+  177  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+  178  docker rm jenkins
+  179  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+  180  docker ps
+  181  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+  182  docker volume ls
