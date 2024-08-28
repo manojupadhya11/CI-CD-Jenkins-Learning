@@ -18,5 +18,17 @@ pipeline {
                 echo "Code have been testes succesfully!"
             }
         }
+        stage('Build Docker Image') {
+            steps {
+                sh "docker build -t mywebimg ."                
+            }
+        }
+        stage ('Deployment') {
+            steps {
+                sh "docker rm -f mywebos"
+                sh "docker run -dit --name mywebos -p 81:80 mywebimg"
+            }
+        }
+
     }
 }
