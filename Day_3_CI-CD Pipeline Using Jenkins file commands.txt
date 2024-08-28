@@ -1,0 +1,37 @@
+yum install docker -y
+    2  systemctl start docker
+    3  systemctl status docker
+    4  ocker images
+    5  docker images
+    6  docker ps
+    7  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+    8  docker stop jenkins
+    9  docker remove jenkins
+   10  docker ps
+   11  docker ps -a
+   12  docker images
+   13  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+   14  docker ps
+   15  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+   16  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm
+   17  ls
+   18  mkdir JenkinsSlave
+   19  ls
+   20  cd JenkinsSlave/
+   21  pwsd
+   22  pwd
+   23  curl -sO http://65.0.89.103:8080/jnlpJars/agent.jar
+   24  ls
+   25  curl -sO http://65.0.89.103:8080/jnlpJars/agent.jar
+   26  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave"
+   27  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave"
+   28  yum install jdk-17.0.10_linux-x64_bin.rpm -y
+   29  cd ..
+   30  ls
+   31  yum install jdk-17.0.10_linux-x64_bin.rpm -y
+   32  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave"
+   33  ls
+   34  cd JenkinsSlave/
+   35  ls
+   36  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave"
+   37  history

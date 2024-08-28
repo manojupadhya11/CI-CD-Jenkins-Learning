@@ -1,0 +1,55 @@
+    1  yum install docker -y
+    2  systemctl start docker
+    3  systemctl status docker
+    4  clear
+    5  docker run -dit --name myos1 centos:7
+    6  docker ps
+    7  ls
+    8  cd /
+    9  ls
+   10  touch manu.txt
+   11  nano manu.txt 
+   12  ls
+   13  docker attach myos1
+   14  docker ps
+   15  docker stop myos1
+   16  docker ps
+   17  docker ps -a
+   18  docker start myos1
+   19  docket attach myos1
+   20  docker attach myos1
+   21  ls
+   22  docker cp manu.txt myos1:/
+   23  docker attach myos1
+   24  docker cp myos1:/a.txt .
+   25  ls
+   26  ls
+   27  history
+   28  ls
+   29  cd /
+   30  ls
+   31  cd manuDockerVolume/
+   32  history
+   33  docker volume ls
+   34  docker ps
+   35  docker attach os1
+   36  docker volumes
+   37  docker volume
+   38  docker volume ls
+   39  ls
+   40  cd ..
+   41  docker volumes ls
+   42  docker volume ls
+   43  docker rm -rf os1
+   44  docker rm -f os1
+   45  docker rm -f os2
+   46  docker ps 
+   47  history
+   48  docker run -dit --name os1 -v /manuDockerVolume/:/app/ centos:7
+   49  docker ps 
+   50  docker attach os1
+   51  docker run -dit --name os2 -v /manuDockerVolume/:/app/ centos:7
+   52  docker ps
+   53  docker attach os2
+   54  docker ps 
+   55  history
