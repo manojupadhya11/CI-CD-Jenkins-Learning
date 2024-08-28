@@ -35,3 +35,8 @@ yum install docker -y
    35  ls
    36  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave"
    37  history
+      38  clear
+   39  java -jar agent.jar -url http://65.0.89.103:8080/ -secret 1f7ea98b875b346645a0fb1b368cf0597adf3613c392cdc30d1c1773c4113949 -name Jenkins -workDir "/home/ec2-user/JenkinsSlave" &
+   40  docker images
+   41  docker ps
+   42  history
