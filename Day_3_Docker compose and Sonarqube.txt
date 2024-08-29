@@ -26,3 +26,30 @@ Commands  History: -
    13  sudo chmod +x /usr/local/bin/docker-compose
    14  docker compose --version
    15  history
+   
+   16  mkdir JenkinsSlave
+   17  cd JenkinsSlave/
+   18  pwd
+   19  cd ..
+   20  curl -sO http://15.206.122.140:8080/jnlpJars/agent.jar
+   21  ls
+   22  java -jar agent.jar -url http://15.206.122.140:8080/ -secret 8ee23f13eeb5c2f4915962296c7204819bc83f16592e8fd2a2b16db435eb527a -name "jenkins slave" -workDir "/home/ec2-user/JenkinsSlave" &
+   23  docker-compose.yml
+   24  nano docker-compose.yml
+   25  vi docker-compose.yml 
+   26  docker-compose up -d
+   27  nano docker-compose.yml 
+   28  vi docker-compose.yml 
+   29  docker ps
+   30  docker run -dit --name OS1 centos:7
+   31  docker run -dit --name OS2 centos:7
+   32  docker ps
+   33  docker attach OS1
+   34  docker attach OS2
+   35  history
+
+Networking between OS1 and OS2
+
+    1  hsotname -I
+    2  hostname -I
+    3  history
