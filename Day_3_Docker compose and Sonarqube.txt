@@ -47,9 +47,32 @@ Commands  History: -
    33  docker attach OS1
    34  docker attach OS2
    35  history
+   36  docker network ls
+   37  vi docker-compose.yml
+   38  docker inspect OS1
+   39  docker network ls
+   40  docker inspect OS2
+   41  docker ps
+   42  docker inspect sonarqube
+   43  docker ps
+   44  docker inspect sonarqube-database
+   45  docker network ls
+   46  docker network create --driver=bridge  --subnet 192.168.100.0/24 --gateway 192.168.100.1 manudockernet
+   47  docker network ls
+   48  docker run -dit --name OS3 centos:7 --network manudockernet
+   49  docker run -dit --name OS3 --network manudockernet centos:7
+   50  docker run -dit --name OS4 --network manudockernet centos:7
+   51   docker attach OS4
+   52  docker run -dit --name OS5 --network manudockernet centos:7
+   53  docker attach OS5
+   54  history
+docker-compose ps
+
+
 
 Networking between OS1 and OS2
 
     1  hsotname -I
     2  hostname -I
     3  history
+    4 ping 192.168.100.2 
