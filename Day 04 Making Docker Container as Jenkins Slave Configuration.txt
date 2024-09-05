@@ -25,3 +25,8 @@ Manage Jenkins--> add node and authentication using ssh
        yum install passwd -y
     3  passwd root
     4  history
+
+    7  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm
+    8  yum install wget
+    9  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm
+   10  yum ins
