@@ -1,0 +1,106 @@
+    1  docekr ps
+    2  history
+    3  docker ps
+    4  docker attach jenkinsslave
+    5  dclear
+    6  clear
+    7  docker ps
+    8  docker attach jenkinsslave
+    9  docker ps
+   10  nano Dokerfile
+   11  docker build -t jenkinsslave:V1 .
+   12  ls
+   13  rename Dokerfile Dockerfile
+   14  nano Dokerfile 
+   15  docker build -t jenkinsslave:V1 .
+   16  docker image
+   17  docker image ls
+   18  docker LOGIN
+   19  docker login
+   20  docker ps
+   21  docker attach ff5ed8
+   22  docker login
+   23  docker ps
+   24  history
+   25  docker jenkinsslave manuupadhya11/jenkinsslave
+   26  docker tag jenkinsslave manuupadhya11/jenkinsslave
+   27  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+   28  docker push manuupadhya11/jenkinsslave
+   29  history
+   30  docker run -dit -p 82:22 jenkinsslave
+   31  docker run -dit -p 82:22 jenkinsslave:V1
+   32  docker attach jenkinsslave:V1
+   33  docker ps
+   34     25  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+   35  docker attach ff5ed
+   36  docker os
+   37  docker ps
+   38  docker exec dreamy_tharp  ls
+   39  docker exec dreamy_tharp cat ~/.ssh/id_rsa.pub
+   40  docker exec dreamy_tharp ls /
+   41  docker exec dreamy_tharp ls /home
+   42  docker exec dreamy_tharp ls /root
+   43  docker exec dreamy_tharp ls /usr
+   44  docker exec dreamy_tharp ssh-keygen -A
+   45  docker exec dreamy_tharp cat ~/.ssh/id_rsa.pub
+   46  docker exec dreamy_tharp ls  ~/.ssh/
+   47  docker exec dreamy_tharp ls-l  ~/.ssh/
+   48  docker exec dreamy_tharp ls -l  ~/.ssh/
+   49  docker exec dreamy_tharp nano /etc/ssh/sshd_config
+   50  docker exec dreamy_tharp vi /etc/ssh/sshd_config
+   51  docker exec dreamy_tharpyum install nano -y
+   52  docker exec dreamy_tharp yum install nano -y
+   53  docker exec dreamy_tharp nano /etc/ssh/sshd_config
+   54  docker exec dreamy_tharp ls /etc/ssh/
+   55  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   56  nano Dockerfile 
+   57  docker ps
+   58  docker b528d
+   59* docker s
+   60  docker rm b528d
+   61  docker build -t jenkinsslave:V1 .
+   62  docker images
+   63  docker run -dit -p 83:22 jenkinsslave:V1
+   64  docker ps
+   65  docker exec infallible_tharp cat /etc/ssh/sshd_config
+   66  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   67  docker ps
+   68  docker exec jenkins_slave cat /etc/ssh/sshd_config
+   69  docker exec jenkinsslave cat /etc/ssh/sshd_config
+   70  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   71  docker exec infallible_tharp cat /etc/ssh/sshd_config
+   72  nano Dockerfile 
+   73  docker build -t jenkinsslave:V1 .
+   74  docker stop infallible_tharp
+   75  docker rm infallible_tharp
+   76  docker run -dit -p 83:22 jenkinsslave:V1
+   77  docker ps
+   78  docker exec nifty_canon cat /etc/ssh/sshd_config
+   79  docker exec nifty_cannon cat /etc/ssh/sshd_config
+   80  docker stop nifty_cannon
+   81  docker rm nifty_cannon
+   82  nano Dockerfile 
+   83  docker build -t jenkinsslave:V1 .
+   84  docker run -dit -p 83:22 jenkinsslave:V1
+   85  docker ps
+   86  docker exec nervous_dijkstra cat /etc/ssh/sshd_config
+   87  docker rm `docker stop nervous_dijkstra`
+   88  docker ps
+   89  nano Dockerfile 
+   90  docker build -t jenkinsslave:V1 .
+   91  docker run -dit -p 83:22 jenkinsslave:V1
+   92  docker ps
+   93  docker exec beautiful_sinoussi cat /etc/ssh/sshd_config
+   94  docker ps
+   95  docker run -dit -p 84:22 jenkinsslave:V1
+   96  docker ps
+   97  nano Dockerfile 
+   98  docker push
+   99  docker images
+  100  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+  101  docker push manuupadhya11/jenkinsslave
+  102  docker pull manuupadhya11/jenkinsslave:latest
+  103  docker images
+  104  docker run -dit -p 85:22 manuupadhya11/jenkinsslave:latest
+  105  clear
+  106  history

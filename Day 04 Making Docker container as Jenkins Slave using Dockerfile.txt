@@ -1,0 +1,5 @@
+nano Dockerfile
+docker build -t jenkinsslave:V1 .
+docker login   ---->login using username and password
+docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+docker push manuupadhya11/jenkinsslave
