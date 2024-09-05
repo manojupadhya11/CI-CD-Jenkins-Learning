@@ -1,0 +1,27 @@
+----------------------on host machine where Docker is installed--------------------
+
+
+
+docker pull amazonlinux
+docker run -dit --name jenkinsslave -p 81:22 amazonlinux
+docker attach jenkinsslave
+
+
+------In Jenkins Dashboard -----------------
+
+Manage Jenkins--> add node and authentication using ssh
+
+
+
+--------------------Inside slave container---------------------------
+    1  yum install openssh-server
+    2  mkdir slave
+    7  yum install hostname
+    8  hostname -I
+    9  vi /etc/ssh/sshd_config
+   10  nano /etc/ssh/sshd_config
+   11  yum install nano
+   12  nano /etc/ssh/sshd_config   ---->>> make PermitRootLogin yes and PasswordAuthentication yes
+       yum install passwd -y
+    3  passwd root
+    4  history
