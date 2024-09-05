@@ -1,0 +1,223 @@
+    1  docekr ps
+    2  history
+    3  docker ps
+    4  docker attach jenkinsslave
+    5  dclear
+    6  clear
+    7  docker ps
+    8  docker attach jenkinsslave
+    9  docker ps
+   10  nano Dokerfile
+   11  docker build -t jenkinsslave:V1 .
+   12  ls
+   13  rename Dokerfile Dockerfile
+   14  nano Dokerfile 
+   15  docker build -t jenkinsslave:V1 .
+   16  docker image
+   17  docker image ls
+   18  docker LOGIN
+   19  docker login
+   20  docker ps
+   21  docker attach ff5ed8
+   22  docker login
+   23  docker ps
+   24  history
+   25  docker jenkinsslave manuupadhya11/jenkinsslave
+   26  docker tag jenkinsslave manuupadhya11/jenkinsslave
+   27  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+   28  docker push manuupadhya11/jenkinsslave
+   29  history
+   30  docker run -dit -p 82:22 jenkinsslave
+   31  docker run -dit -p 82:22 jenkinsslave:V1
+   32  docker attach jenkinsslave:V1
+   33  docker ps
+   34     25  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+   35  docker attach ff5ed
+   36  docker stop lover_boyd
+   37  docker ps
+   38  docker stop loving_boyd
+   39  docker rm loving_boyd
+   40  docker ps
+   41  docker run -dit -p 82:22 manuupadhya11/jenkinsslave
+   42  docker ps
+   43  docker run -it -p 83:22 manuupadhya11/jenkinsslave
+   44  docker os
+   45  docker ps
+   46  docker exec dreamy_tharp  ls
+   47  docker exec dreamy_tharp cat ~/.ssh/id_rsa.pub
+   48  docker exec dreamy_tharp ls /
+   49  docker exec dreamy_tharp ls /home
+   50  docker exec dreamy_tharp ls /root
+   51  docker exec dreamy_tharp ls /usr
+   52  docker exec dreamy_tharp ssh-keygen -A
+   53  docker exec dreamy_tharp cat ~/.ssh/id_rsa.pub
+   54  docker exec dreamy_tharp ls  ~/.ssh/
+   55  docker exec dreamy_tharp ls-l  ~/.ssh/
+   56  docker exec dreamy_tharp ls -l  ~/.ssh/
+   57  docker exec dreamy_tharp nano /etc/ssh/sshd_config
+   58  docker exec dreamy_tharp vi /etc/ssh/sshd_config
+   59  docker exec dreamy_tharpyum install nano -y
+   60  docker exec dreamy_tharp yum install nano -y
+   61  docker exec dreamy_tharp nano /etc/ssh/sshd_config
+   62  docker exec dreamy_tharp ls /etc/ssh/
+   63  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   64  nano Dockerfile 
+   65  docker ps
+   66  docker b528d
+   67  docker s
+   68  docker rm b528d
+   69  docker build -t jenkinsslave:V1 .
+   70  docker images
+   71  docker run -dit -p 83:22 jenkinsslave:V1
+   72  docker ps
+   73  docker exec infallible_tharp cat /etc/ssh/sshd_config
+   74  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   75  docker ps
+   76  docker exec jenkins_slave cat /etc/ssh/sshd_config
+   77  docker exec jenkinsslave cat /etc/ssh/sshd_config
+   78  docker exec dreamy_tharp cat /etc/ssh/sshd_config
+   79  docker exec infallible_tharp cat /etc/ssh/sshd_config
+   80  nano Dockerfile 
+   81  docker build -t jenkinsslave:V1 .
+   82  docker stop infallible_tharp
+   83  docker rm infallible_tharp
+   84  docker run -dit -p 83:22 jenkinsslave:V1
+   85  docker ps
+   86  docker exec nifty_canon cat /etc/ssh/sshd_config
+   87  docker exec nifty_cannon cat /etc/ssh/sshd_config
+   88  docker stop nifty_cannon
+   89  docker rm nifty_cannon
+   90  nano Dockerfile 
+   91  docker build -t jenkinsslave:V1 .
+   92  docker run -dit -p 83:22 jenkinsslave:V1
+   93  docker ps
+   94  docker exec nervous_dijkstra cat /etc/ssh/sshd_config
+   95  docker rm `docker stop nervous_dijkstra`
+   96  docker ps
+   97  nano Dockerfile 
+   98  docker build -t jenkinsslave:V1 .
+   99  docker run -dit -p 83:22 jenkinsslave:V1
+  100  docker ps
+  101  docker exec beautiful_sinoussi cat /etc/ssh/sshd_config
+  102  docker ps
+  103  docker run -dit -p 84:22 jenkinsslave:V1
+  104  docker ps
+  105  nano Dockerfile 
+  106  docker push
+  107  docker images
+  108  docker tag jenkinsslave:V1 manuupadhya11/jenkinsslave
+  109  docker push manuupadhya11/jenkinsslave
+  110  docker pull manuupadhya11/jenkinsslave:latest
+  111  docker images
+  112  docker run -dit -p 85:22 manuupadhya11/jenkinsslave:latest
+  113  clear
+  114  history
+  115  clear
+  116  docker ps
+  117  docker attach dremy_tharp
+  118  docker attach dreamy_tharp
+  119  yum install docker -y
+  120  systemctl start docker 
+  121  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+  122  docker ps
+  123  docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+  124  docker run -dit --name jenkins slave -p 81:22 amazonlinux
+  125  docker pull amazonlinux
+  126  docker run -dit --name jenkins slave -p 81:22 amazonlinux
+  127  docker run -dit --name jenkinsslave -p 81:22 amazonlinux
+  128  docker ps
+  129  docker attach jenkinsslave
+  130  systemctl status docker
+  131  systemctl start docker
+  132  exit
+  133  nano /usr/lib/systemd/docker.service
+  134  nano /usr/lib/systemd/system/docker.service
+  135  systemctl start docker
+  136  systemctl daemon-reload
+  137  systemctl restart docker
+  138  journalctl -xeu docker.service
+  139  nano /usr/lib/systemd/system/docker.service
+  140  systemctl daemon-reload
+  141  systemctl restart docker
+  142  nano /usr/lib/systemd/system/docker.service
+  143  systemctl daemon-reload
+  144  sudo su
+  145  nano /usr/lib/systemd/system/docker.service
+  146  systemctl daemon-reload
+  147  systemctl restart docker
+  148  journalctl -xeu docker.service
+  149  journalctl -u docker.service
+  150  clear
+  151  sudo systemctl restart docker
+  152  docker login
+  153  sudo systemctl restart docker
+  154  docker container prune
+  155  docker system prune
+  156  systemctl enable docker
+  157  sudo systemctl restart docker
+  158  sudo systemctl start docker
+  159  sudo journalctl -u docker.service
+  160  nano /usr/lib/systemd/system/docker.service
+  161  sudo systemctl start docker
+  162  systemctl daemon-reload
+  163  sudo systemctl start docker
+  164  docker ps
+  165  nano /usr/lib/systemd/system/docker.service
+  166  nano /usr/lib/systemd/system/docker.service
+  167  systemctl daemon-reload
+  168  systemctl start docker
+  169  systemctl docker status
+  170  systemctl status docker
+  171  clear
+  172  docker ps
+  173  nano /usr/lib/systemd/system/docker.service
+  174  systemctl daemon-reload
+  175  systemctl docker status
+  176  systemctl status docker
+  177  systemctl start docker
+  178  systemctl status docker
+  179  nano /usr/lib/systemd/system/docker.service
+  180  systemctl daemon-reload
+  181  systemctl start docker
+  182  systemctl status docker 
+  183  ocker ps
+  184  docker ps
+  185  history
+  186  nano /usr/lib/systemd/system/docker.service
+  187  ss -lntp | grep dockerd
+  188  sudo firewall-cmd --zone=public --add-port=4243/tcp --permanent
+  189  yum install firewall-cmd
+  190  netstat -tuln | grep 4243
+  191  journalctl -u docker.service
+  192* 
+  193  telnet 13.232.248.100:4243
+  194  yum install telnet
+  195  telnet 13.232.248.100:4243
+  196  systemctl status docker
+  197  curl http://13.232.248.100:4243
+  198  nano /usr/lib/systemd/system/docker.service
+  199  systemctl daemon-reload
+  200  systemctl start docker
+  201  systemctl status docker
+  202  nano /usr/lib/systemd/system/docker.service
+  203  nano /usr/lib/systemd/system/docker.service
+  204  systemctl daemon-reload
+  205  systemctl start docker
+  206  systemctl status docker
+  207  ocker ps
+  208  docker ps
+  209  nano /usr/lib/systemd/system/docker.service
+  210  systemctl daemon-reload
+  211  systemctl start docker
+  212  systemctl restart docker
+  213  nano /usr/lib/systemd/system/docker.service
+  214  systemctl daemon-reload
+  215  systemctl restart docker
+  216  systemctl status docker.service
+  217  nano /usr/lib/systemd/system/docker.service
+  218  systemctl daemon-reload
+  219  systemctl restart docker
+  220  systemctl restart docker
+  221  docker ps
+  222  watch docker ps
+  223  history

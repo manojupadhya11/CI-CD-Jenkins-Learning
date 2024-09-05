@@ -1,0 +1,11 @@
+pipeline {
+    agent {dockerContainer 'manuupadhya11/jenkinsslave:latest'}
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
