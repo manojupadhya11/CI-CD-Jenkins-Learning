@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+    parameters{
+        string(name:'DEPLOY_ENV', defaultValue: 'dev', description: 'environment to deploy')
+        booleanParam(name: 'RUN_TESTS',defaultValue: 'true',description: 'Run Tests ?')
+    }
+    environment{
+        REGION = 'ap-south-1'
+        BUILD_VERSION = "1.0.${env.BUILD_NUMBER}"
+    }
+    stages {
+        stage('Built-in') {
+            steps {
+                echo "Built Numbers: ${env.BUILD_NUMBER}"
+                echo "Built ID: ${env.BUILD_ID}"
+                echo "JOB Name: ${env.JOB_NAME}"
+                echo "Build URL: ${env.BUILD_URL}"
+                echo "Workspace: ${env.WORKSPACE}"
+                echo "Node NAME: ${env.NODE_NAME}"
+            }
+        }
+        stage('PipeLine Parameters') {
+            steps {
+                echo "Deploy Env: ${params.DEPLOY_ENV}"
+                echo "RUN TESTS: ${params.RUN_TESTS}"
+            }
+        }
+        stage('Custom Variables') {
+            steps {
+                echo "REGION : ${env.REGION}"
+                echo  "BUILD_VERSION: ${env.BUILD_VERSION}"
+            }
+        }
+        stage('Dynamic Custom Variables') {
+            steps {
+                script{
+                env.RUNTIME_VAR = "runtime-${env.BUILD_NUMBER}"
+                echo  "DYNAMIC: ${env.RUNTIME_VAR}"                    
+                }
+            }
+        }  
+        stage('ls') {
+            steps {
+                sh 'ls /var/lib/jenkins'
+            }
+        }
+    }
+}
